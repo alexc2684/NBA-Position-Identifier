@@ -1,6 +1,12 @@
 import csv
 
-with open('data.txt', newline='') as input:
-    data = list(csv.reader(input))
+def getData():
+    with open('data.txt', newline='') as input:
+        data = list(csv.reader(input))
+    return data
 
-print(data[0])
+def getPositions():
+    return [PF, SF, C, PG, SG]
+
+#player = data[i]
+#position = player[2]
