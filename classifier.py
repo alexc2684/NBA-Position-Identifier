@@ -35,7 +35,7 @@ class KNeighborsClassifier:
                 best_index = i
         return self.y_train[best_index]
 
-my_classifier = tree.DecisionTreeClassifier()
+my_classifier = KNeighborsClassifier()
 my_classifier.fit(X_train, y_train)
 
 predictions = my_classifier.predict(X_test)
