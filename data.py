@@ -31,6 +31,6 @@ def getPositions():
     for player in results:
         positions.append(player[2])
     return positions
-# 
+
 # print(getData()[14])
 # print(getPositions()[14])
